@@ -1,0 +1,29 @@
+@import 'variables';
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+.col-2 {
+  display: grid;
+  grid-template-columns: .9fr 1.1fr;
+  grid-gap: 1rem;
+  
+  @media screen and (max-width: $break-sm) {
+      grid-template-columns: 1fr;
+  }
+}
