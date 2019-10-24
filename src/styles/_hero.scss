@@ -2,23 +2,26 @@
 
 .hero {
     color: white;
-    padding: 8rem 0;
+    padding: 8rem 0 1rem 0;
     background: linear-gradient(90deg, $purple, $blue);
     p {
-        margin: 2.5rem 0 3rem 0;
+        margin: 2.2rem 0 3rem 0;
     }
     span {
         font-size: 1.1rem;
         padding: 0 2rem;
     }
-}
-
-.col-2 {
-    display: grid;
-    grid-template-columns: .9fr 1.1fr;
-    grid-gap: 1rem;
-    
-    @media screen and (max-width: $break-sm) {
-        grid-template-columns: 1fr;
+    &-img {
+        max-width: 85vh;
+    }
+    &-img-col {
+        text-align: end;
+    }
+    &-txt-col {
+        margin-top: -4rem;
+    }
+    &-icon {
+        width: 24px;
+        vertical-align: middle;
     }
 }

@@ -10,18 +10,35 @@ body {
 }
 
 h1 {
+  letter-spacing: .05rem;
   font-size: 3rem;
+  font-weight: 500;
+}
+h2 {
+  font-size: 2.2rem;
   font-weight: 500;
 }
 
 .container {
-  max-width: 1200px;
-  margin: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  @media screen and (min-width: 768px) {
+      width: 750px;
+  }
+  @media screen and (min-width: 992px) {
+      width: 970px;
+  }
+  @media screen and (min-width: 1200px) {
+      width: 1170px;
+  }
 }
 .col-2 {
   display: grid;
-  grid-template-columns: .9fr 1.1fr;
+  grid-template-columns: 1fr 1fr;
   grid-gap: 1rem;
+  align-items: center;
   
   @media screen and (max-width: $break-sm) {
       grid-template-columns: 1fr;
