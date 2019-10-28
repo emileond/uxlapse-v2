@@ -8,6 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import { window, document, exists } from 'browser-monads';
 
 import Header from "./header"
 import Footer from "./Footer"
