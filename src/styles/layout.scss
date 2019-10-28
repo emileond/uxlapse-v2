@@ -5,26 +5,85 @@ html {
 }
 
 body {
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Muli', sans-serif;
   font-size: 16px;
 }
 
 h1 {
   letter-spacing: .05rem;
   font-size: 3rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 h2 {
+  color: $dark-blue;
+  letter-spacing: .03rem;
   font-size: 2.2rem;
-  font-weight: 500;
+  font-weight: 600;
 }
-
+h3 {
+  color: $dark-blue;
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: .02rem;
+}
+h4 {
+  color: $dark-blue;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+h5 {
+  color: $dark-blue;
+  font-size: .9rem;
+  font-weight: 600;
+  letter-spacing: .02rem;
+}
+p {
+  letter-spacing: .02rem;
+  line-height: 1.5rem;
+}
+ul {
+  list-style-type: none;
+  padding-inline-start: 1rem;
+}
+label {
+  display: block;
+  font-size: .9rem;
+  color: $dark-blue;
+  padding: 0 1rem;
+  margin: 0 0 .5rem;
+}
+label {
+  display: block;
+  font-size: .9rem;
+  color: $dark-blue;
+  padding: 0 1rem;
+  margin: 0 0 .5rem;
+}
+input, textarea, select {
+  width: 100%;
+  padding: 1rem;
+  margin: 0 0 1.5rem 0;
+  border-radius: $card-border;
+  border: 1px solid $gray-02;
+  box-sizing: border-box;
+  &:focus {
+      border: 1px solid $blue;
+      background-color: $gray-light;
+      outline: none; 
+  }
+  &::placeholder {
+      color: $gray-02;
+  }
+}
+textarea {
+  resize: none;
+}
 .container {
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 1rem;
+  padding-left: 1rem;
   margin-right: auto;
   margin-left: auto;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $break-sm) {
       width: 750px;
   }
   @media screen and (min-width: 992px) {
@@ -34,13 +93,20 @@ h2 {
       width: 1170px;
   }
 }
+.text-container {
+  max-width: 800px;
+  margin: auto;
+}
 .col-2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 1rem;
+  gap: 1rem;
   align-items: center;
   
   @media screen and (max-width: $break-sm) {
       grid-template-columns: 1fr;
   }
+}
+.text-center {
+  text-align: center;
 }

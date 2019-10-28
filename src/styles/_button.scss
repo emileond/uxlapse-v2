@@ -1,12 +1,39 @@
 @import 'variables';
 
 .button {
-    color: $dark-blue;
-    font-size: 1.1rem;
+    font-family: 'Futura', 'Muli', sans-serif;
     font-weight: bold;
-    border-radius: 100px;
-    padding: 1rem 3rem;
-    background-color: $green;
+    font-size: 1.1rem;
     border: 0;
     cursor: pointer;
+    &-primary {
+        padding: 1rem 3rem;
+        color: $dark-blue;
+        border-radius: 100px;
+        background-color: $green;
+    }
+    &-secondary {
+        color: $blue-02;
+        background-color: transparent;
+        text-align: right;
+        img {
+            width: 1rem;
+            padding: 0 0 0 .5rem ;
+            vertical-align: middle;
+        }
+    }
+    &-rounded {
+        display: inline-block;
+        background-color: $green;
+        border-radius: 100%;
+        width: 46px;
+        height: 46px;
+        img {
+            width: 24px;
+            vertical-align: middle;
+        }
+    }
+    &:focus {
+        outline: none;
+    }
 }

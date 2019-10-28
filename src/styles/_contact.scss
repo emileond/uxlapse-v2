@@ -1,0 +1,32 @@
+@import 'variables';
+
+.contact {
+    background-color: $dark-blue;
+    padding: 2rem 2rem 4rem 2rem;
+    &-grid {
+        display: grid;
+        grid-template-columns: .9fr 1.1fr;
+        gap: 2rem;
+        max-width: $break-md;
+        margin: auto;
+        @media screen and (max-width: $break-sm) {
+            grid-template-columns: 1fr;
+        }
+        h2 {
+            color: white;
+        }
+        p {
+            color: white;
+        }
+    }
+    &-form {
+        margin-top: -9rem;
+        padding: 2rem;
+        background-color: white;
+        border-radius: $card-border;
+        box-shadow: 0 5px 20px 0 rgba(62, 79, 110, 0.15);
+        @media screen and (max-width: $break-sm) {
+            margin-top: 0;
+        }
+    }
+}
